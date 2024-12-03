@@ -17,11 +17,11 @@ export default function Home() {
 
       {/* Text Overlay */}
       <div className="absolute inset-0 flex flex-col items-center justify-start -mt-10 top-[20vh]">
-        <h1 
+        <h1
           className="text-[15rem] font-bold leading-none tracking-wider text-transparent"
           style={{
             WebkitTextStroke: '2px #1a1a1a',
-            textStroke: '2px #1a1a1a'
+            textStroke: '2px #1a1a1a',
           }}
         >
           VYRA
@@ -32,7 +32,10 @@ export default function Home() {
       </div>
 
       {/* Buttons */}
-      <div className="absolute inset-0 flex items-center justify-center top-[60vh] space-x-4">
+      <div
+        className="absolute inset-x-0 flex items-center justify-center space-x-4"
+        style={{ top: '40vh', height: '30vh' }}
+      >
         <Link href="/page1">
           <button className="px-6 py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600">
             Page 1
