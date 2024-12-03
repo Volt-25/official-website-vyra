@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="relative w-full h-full">
@@ -27,6 +29,54 @@ export default function Home() {
         <p className="text-2xl text-gray-800 mt-4 tracking-wide">
           Explore the race within you
         </p>
+      </div>
+
+      {/* Buttons */}
+      <div className="absolute inset-0 flex items-center justify-center top-[60vh] space-x-4">
+        <Link href="/page1">
+          <button className="px-6 py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600">
+            Page 1
+          </button>
+        </Link>
+        <Link href="/page2">
+          <button className="px-6 py-3 bg-green-500 text-white rounded-lg shadow hover:bg-green-600">
+            Page 2
+          </button>
+        </Link>
+        <Link href="/page3">
+          <button className="px-6 py-3 bg-red-500 text-white rounded-lg shadow hover:bg-red-600">
+            Page 3
+          </button>
+        </Link>
+      </div>
+
+      {/* Videos */}
+      <div className="absolute bottom-10 inset-x-0 flex flex-col items-center space-y-4">
+        {/* Two square videos in a row */}
+        <div className="flex space-x-4">
+          <video
+            src="assets/start.mp4"
+            autoPlay
+            loop
+            muted
+            className="w-1/4 aspect-square object-cover rounded-lg shadow"
+          />
+          <video
+            src="assets/start.mp4"
+            autoPlay
+            loop
+            muted
+            className="w-1/4 aspect-square object-cover rounded-lg shadow"
+          />
+        </div>
+        {/* Landscape video below */}
+        <video
+          src="assets/aiAnalysis.mp4"
+          autoPlay
+          loop
+          muted
+          className="w-3/4 aspect-video object-cover rounded-lg shadow"
+        />
       </div>
     </div>
   );
