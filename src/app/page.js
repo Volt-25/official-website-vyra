@@ -18,7 +18,7 @@ export default function Home() {
       {/* Text Overlay */}
       <div className="absolute inset-0 flex flex-col items-center justify-start -mt-10 top-[20vh]">
         <h1
-          className="text-[15rem] font-bold leading-none tracking-wider text-transparent"
+          className="text-[25vw] font-bold leading-none tracking-wider text-transparent"
           style={{
             WebkitTextStroke: '2px #1a1a1a',
             textStroke: '2px #1a1a1a',
@@ -56,20 +56,20 @@ export default function Home() {
       {/* Videos */}
       <div className="absolute bottom-10 inset-x-0 flex flex-col items-center space-y-4">
         {/* Two square videos in a row */}
-        <div className="flex space-x-4">
+        <div className="flex justify-center space-x-4 w-full px-4">
           <video
             src="assets/start.mp4"
             autoPlay
             loop
             muted
-            className="w-1/4 aspect-square object-cover rounded-lg shadow"
+            className="w-[50%] aspect-square object-cover rounded-lg shadow"
           />
           <video
             src="assets/start.mp4"
             autoPlay
             loop
             muted
-            className="w-1/4 aspect-square object-cover rounded-lg shadow"
+            className="w-[50%] aspect-square object-cover rounded-lg shadow"
           />
         </div>
         {/* Landscape video below */}
@@ -78,7 +78,7 @@ export default function Home() {
           autoPlay
           loop
           muted
-          className="w-3/4 aspect-video object-cover rounded-lg shadow"
+          className="w-full aspect-video object-cover rounded-lg shadow px-4"
         />
       </div>
     </div>
